@@ -1,0 +1,17 @@
+11-20 23:24:44.695: W/System.err(25948): -21
+11-20 23:24:44.695: W/System.err(25948): NO MOVE FOUND ================================
+11-20 23:24:44.695: W/System.err(25948): I WANTED TO MOVE: 0, 0
+11-20 23:24:44.695: W/System.err(25948): CONFIDENCE: null
+11-20 23:24:44.695: W/dalvikvm(25948): threadid=21: thread exiting with uncaught exception (group=0x40d4b930)
+11-20 23:24:44.695: E/AndroidRuntime(25948): FATAL EXCEPTION: Computer Player
+11-20 23:24:44.695: E/AndroidRuntime(25948): java.lang.IndexOutOfBoundsException: Invalid index 0, size is 0
+11-20 23:24:44.695: E/AndroidRuntime(25948): 	at java.util.ArrayList.throwIndexOutOfBoundsException(ArrayList.java:251)
+11-20 23:24:44.695: E/AndroidRuntime(25948): 	at java.util.ArrayList.get(ArrayList.java:304)
+11-20 23:24:44.695: E/AndroidRuntime(25948): 	at edu.up.cs301.othello.SmartOthelloComputerPlayer.makeMove(SmartOthelloComputerPlayer.java:244)
+11-20 23:24:44.695: E/AndroidRuntime(25948): 	at edu.up.cs301.othello.OthelloComputerPlayer.receiveInfo(OthelloComputerPlayer.java:48)
+11-20 23:24:44.695: E/AndroidRuntime(25948): 	at edu.up.cs301.game.GameComputerPlayer$MyRunnable.run(GameComputerPlayer.java:243)
+11-20 23:24:44.695: E/AndroidRuntime(25948): 	at android.os.Handler.handleCallback(Handler.java:725)
+11-20 23:24:44.695: E/AndroidRuntime(25948): 	at android.os.Handler.dispatchMessage(Handler.java:92)
+11-20 23:24:44.695: E/AndroidRuntime(25948): 	at android.os.Looper.loop(Looper.java:137)
+11-20 23:24:44.695: E/AndroidRuntime(25948): 	at edu.up.cs301.game.GameComputerPlayer$1.run(GameComputerPlayer.java:142)
+11-20 23:24:44.695: E/AndroidRuntime(25948): 	at java.lang.Thread.run(Thread.java:856)

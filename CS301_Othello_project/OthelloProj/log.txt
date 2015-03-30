@@ -1,0 +1,32 @@
+Othello Android Project Log
+	Chandler Underwood
+	Jordan White
+	Stephen Robinson
+	Taylor Spooner
+	
+Date:11-03-2013
+Problem: Unsure of how to design our own button/text view layout
+Resources: http://stackoverflow.com/questions/3496269/how-to-put-a-border-around-an-android-textview
+		   http://blog.vogella.com/2011/07/19/android-shapes/
+Solution: Create an xml file, in the drawable folder and specify shape, background/border color, border width,
+		  and corner shapes/sizes. After you create this drawable, we changed the background of the text views to
+		  the drawable we created.
+ 
+Date: 11-03-2013
+Source of wood-grain background: http://wallpoper.com/images/00/25/71/46/wood-textures_00257146.jpg
+
+Date: 11-6-2013
+Problem: We wanted to use bitmaps to draw our board and game pieces, but were unsure how to.
+Resources: http://stackoverflow.com/questions/9979789/drawing-bitmaps-in-android
+Solution: We used static methods from the BitmapFactory class to create bitmaps and then we used Bitmap.createScaledBitmap()
+		  and g.drawBitmap() methods to resize our bitmaps and draw them on the canvas. The solutions we used can be found in the OthelloHumanPlayer
+		  class in the setAsGui() method and the tick() method.
+		  
+Date: 11/13/2013
+Problem: We wanted to create a dialog box after the user presses our "Quit" button
+  		 to allow the user to confirm they wish to quit, or to cancel and resume playing.
+Resources: http://stackoverflow.com/questions/12600360/how-to-make-an-alert-dialog-box-in-android
+   		   http://developer.android.com/reference/android/app/AlertDialog.html
+Solution: We were pointed to the "AlertDialog" class, which we looked up and used to create a pop-up box with
+   		  a positive and a negative button. This code is used in OthelloHumanPlayer class in the "quitPressed()" method.
+   			 
